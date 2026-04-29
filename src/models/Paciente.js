@@ -23,6 +23,17 @@ const paciente = connection.define("paciente", {
         type: DataTypes.STRING,
         allowNull: false
     },
+    prioridade:{    
+        type: DataTypes.INTEGER,
+        allowNull: true,
+        defaultValue: 5
+    },
+    status:{    
+        type: DataTypes.STRING,
+        allowNull: false,
+        defaultValue: "Em espera"
+    }
+    
 },
     {
         tableName: "pacientes",
